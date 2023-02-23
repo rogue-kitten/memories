@@ -1,0 +1,19 @@
+{
+    "extends": ["airbnb", "airbnb-typescript", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "import/prefer-default-export": "off",
+        "func-names": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/require-default-props": "off",
+        "react/no-array-index-key": "warn",
+        "no-nested-ternary": "warn",
+        "no-else-return": "warn",
+        "no-param-reassign": ["error", { "props": false }] //for immer
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    }
+}
